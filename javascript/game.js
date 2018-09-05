@@ -13,7 +13,7 @@ var resetAndStartGame = function() {
         'https://cdn.leibish.com/media/gemstones/thumb_1280/gemstone-306170-emerald-emerald-green-cf129.jpg',
         'https://cdn.leibish.com/media/gemstones/thumb_w800/gemstone-295991-aquamarine-oval-blue-8f941.jpg']; 
 
-randomResult = Math.floor(Math.random() * 69 ) + 30;
+randomResult = Math.floor(Math.random() * 89 ) + 30;
 
 $("#result").html('Random Number: ' + randomResult);
 
