@@ -4,7 +4,7 @@ body{
 }
 
 p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .crystals{
     display: flex;
@@ -38,7 +38,8 @@ img {
     text-align: center;
     width:960px;
     height: 620px;
-    border: 2px solid red;
+    border: 6px ridge red;
+    border-radius: 12px;
     margin: 75px 250px;
     padding: 25px;
     background-color: aqua;
