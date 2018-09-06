@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crystal Collector!</title>
    
     <!--Link icon for title--> 
@@ -9,27 +10,33 @@
     <!--Link jQuery--> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Links the Custom styling--> 
+    
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> 
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <!--Link to google fonts-->   
+    <!--Link to Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Link to Google Fonts-->   
     <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Pacifico" rel="stylesheet">
 </head>
 <body>
         
-    <!--Div containing the game-->
+    <!--Div Containing the Game-->
+<div class="container">
     <div class="main">
         <div class="rainbow">The Great Crystal Collector!</div>
         <link async href="http://fonts.googleapis.com/css?family=Bad%20Script" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
         <hr>
-        <br><p>Click on a crystal and it will add a specific amount of points to your total score. You win if your total score matches the random number!</p>
-        <br><br><p id="result"></p><br><br>
-        <!--loading images using Javascript-->
+        <p>Click on a crystal and it will add a specific amount of points to your total score. You win if your total score matches the random number!</p>
+        <p id="result"></p>
+        <!--Loading Images Using Javascript-->
         <div class="crystals">
         </div><br><br>
-        <p id="previous"></p><br><br>
+        <p id="previous"></p><br>
         <span id="win"></span>
-        <span id="lost"></span>
+        <span id="lost"></span><br>
     </div>
+</div>
    <!--Link to Javascript-->
     <script type="text/javascript" src="./javascript/game.js"></script> 
 </body>
