@@ -1,4 +1,5 @@
 # unit-4-game
+![DemoPic](./assets/demo.png)
 Crystal Game using Jquery<br>
 Live demo: <a href="https://nbcorrigan.github.io/unit-4-game/">https://nbcorrigan.github.io/unit-4-game</a><br>
 *This is a guessing game using numbers where the player will guess with numbers. <br>
