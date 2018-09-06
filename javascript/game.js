@@ -3,7 +3,7 @@ var win = 0;
 var lost = 0;
 var lastOne = 0;
 
-var resetAndStartGame = function() {
+var StartGame = function() {
 
     $(".crystals").empty();
 
@@ -34,20 +34,13 @@ for (var i = 0; i < 4; i++) {
            "background-size": "cover"
        })
    //crystal.html(random);
-$(".crystals").append(crystal);
-
-    var size = images.length
-    var x = Math.floor(size*Math.random())
-    $('.crystals').attr('src',images[x]);
+        $(".crystals").append(crystal);
     }
 
-
-
-
-$("#lastOne").html("Your Total Score: " + lastOne);
+    $("#lastOne").html("Your Total Score: " + lastOne);
 }
 
-resetAndStartGame();
+StartGame();
 
 $(document).on('click', ".crystal", function (){
 
@@ -60,12 +53,12 @@ $(document).on('click', ".crystal", function (){
         lost ++;
         $('#lost').html("You Lost: " + lost);
         lastOne = 0;
-        resetAndStartGame();
+        StartGame();
     }
     else if (lastOne === randomResult){
         win ++;
         $('#win').html("You Won: " +  win);
         lastOne = 0;
-        resetAndStartGame();
+        StartGame();
     }
 }); 

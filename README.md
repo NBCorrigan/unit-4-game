@@ -1,6 +1,6 @@
 # unit-4-game
 Crystal Game using Jquery<br>
-Live demo: <a href="https://nbcorrigan.github.io/unit-4-game/">https://nbcorrigan.github.io/unit-4-game</a>
+Live demo: <a href="https://nbcorrigan.github.io/unit-4-game/">https://nbcorrigan.github.io/unit-4-game</a><br>
 *This is a guessing game using numbers where the player will guess with numbers. <br>
 *There will be four crystals displayed as buttons on the page.<br>
 *The player will be shown a random number at the start of the game.<br>
