@@ -6,11 +6,11 @@ body {
 p {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .crystals{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .crystal {
@@ -26,7 +26,6 @@ p {
     box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
     cursor: pointer;
     transition: box-shadow 1s;
-
 }
 
 img {
@@ -46,12 +45,6 @@ img {
     padding: 25px;
     background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/J9H9WF0/glowing-white-snowflake-particles-falling-down-against-a-light-teal-blue-gradient-background_s5r-sa3c_thumbnail-full01.png");
     background-size: cover;
-}
-
-#title {
-    
-    font-family: 'Pacifico', cursive;
-    font-size: 60px;
 }
 
 #result{

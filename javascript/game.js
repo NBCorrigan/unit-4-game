@@ -13,14 +13,14 @@ var StartGame = function() {
         'https://cdn.leibish.com/media/gemstones/thumb_1280/gemstone-306170-emerald-emerald-green-cf129.jpg',
         'https://cdn.leibish.com/media/gemstones/thumb_w800/gemstone-295991-aquamarine-oval-blue-8f941.jpg']; 
 
-randomResult = Math.floor(Math.random() * 89 ) + 30;
+    randomResult = Math.floor(Math.random() * 89 ) + 30;
 
-$("#result").html('Random Number: ' + randomResult);
+    $("#result").html('Random Number: ' + randomResult);
 
-for (var i = 0; i < 4; i++) {  
+    for (var i = 0; i < 4; i++) {  
    
-   var random = Math.floor(Math.random() * 11) + 1;
-   //console.log(random);
+    var random = Math.floor(Math.random() * 11) + 1;
+    //console.log(random);
    
     
    
@@ -33,21 +33,21 @@ for (var i = 0; i < 4; i++) {
            "background-image":"url('" + images[i] + "')",
            "background-size": "cover"
        })
-   //crystal.html(random);
+    //crystal.html(random);
         $(".crystals").append(crystal);
-    }
+        }
 
-    $("#lastOne").html("Your Total Score: " + lastOne);
+        $("#lastOne").html("Your Total Score: " + lastOne);
 }
 
 StartGame();
 
 $(document).on('click', ".crystal", function (){
 
-    var num = parseInt($(this).attr('data-random'));
-    lastOne += num;
+    var number = parseInt($(this).attr('data-random'));
+    lastOne += number;
     $("#previous").html("Total Score: " + lastOne);
-    console.log(lastOne);
+    //console.log(lastOne);
 
     if (lastOne > randomResult){
         lost ++;
