@@ -22,6 +22,7 @@ for (var i = 0; i < 4; i++) {
    var random = Math.floor(Math.random() * 11) + 1;
    //console.log(random);
    
+    
    
     var crystal = $("<div>");
        crystal.attr({
@@ -34,7 +35,14 @@ for (var i = 0; i < 4; i++) {
        })
    //crystal.html(random);
 $(".crystals").append(crystal);
+
+    var size = images.length
+    var x = Math.floor(size*Math.random())
+    $('.crystals').attr('src',images[x]);
     }
+
+
+
 
 $("#lastOne").html("Your Total Score: " + lastOne);
 }
